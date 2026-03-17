@@ -1,0 +1,28 @@
+:root {
+  /* Base */
+  --color-bg: #0A111F;
+  --color-surface: #121A2F;
+  --color-surface-light: #1C2A44;
+
+  /* Brand */
+  --color-primary: #253f68;
+  --color-primary-light: #2b53b1;
+
+  /* Text */
+  --color-text: #E8E9EC;
+  --color-muted: #A9AAB0;
+
+  /* Borders / subtle */
+  --color-border: #2B3341;
+  --radius: 8px;
+
+  /* Layout */
+  --max-width: 1200px;
+  --section-padding: 6rem 2rem;
+
+  /* Typography */
+  --font-title: "Inter", sans-serif;
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
