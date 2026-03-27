@@ -1,5 +1,8 @@
 export type Project = {
+  index: number,
   title: string,
-  description: string,
+  category: string,
   image: string
+  span: string
+  url: string
 }

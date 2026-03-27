@@ -1,4 +1,8 @@
+import { IconType } from "react-icons"
+
 export type Service = {
-    title: string,
+    title: string
     description: string
+    iconClassName: string
+    icon: IconType
 }

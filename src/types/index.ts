@@ -1,3 +1,5 @@
 export * from "./project"
 export * from "./service"
 export * from "./navlink"
+export * from "./siteConfig"
+export * from "./aboutStat"
