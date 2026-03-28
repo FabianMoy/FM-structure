@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Hero() {
 
- return (
+  return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-slate-950">
-<div aria-hidden="true" className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px] pointer-events-none" />
-<div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-[128px] pointer-events-none" />
-      
+      <div aria-hidden="true" className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px] pointer-events-none" />
+      <div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-[128px] pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col items-start gap-8">
           <Motion
@@ -17,25 +17,25 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-cyan-400"
           >
-            <LuSparkles size={14} aria-hidden="true"/>
+            <LuSparkles size={14} aria-hidden="true" />
             <span>Elevando tu experiencia digital</span>
           </Motion>
-          
+
           <Motion
             as="h1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-  className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]"
->
-  Creando tu sitio{" "}
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-    web moderno.
-  </span>
-</Motion>
-          
+            className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]"
+          >
+            Creando tu sitio{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              web moderno.
+            </span>
+          </Motion>
+
           <Motion
-            as = 'p'
+            as='p'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function Hero() {
           >
             FM Structure entregando alta eficiencia, aplicaciones web escalables y diseñadas con alta precisión para el mañana.
           </Motion>
-          
+
           <Motion
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,12 +57,15 @@ export default function Hero() {
               Mira nuestro trabajo
               <LuArrowRight size={16} aria-hidden="true" className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              href="#contact"
+            <a
+              href='https://wa.link/ffd26q'
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contactar por WhatsApp"
               className="px-8 py-4 text-sm font-medium text-white bg-transparent hover:bg-white/5 border border-white/10 rounded-full transition-all"
             >
               Agenda una consulta
-            </Link>
+            </a>
           </Motion>
         </div>
 
@@ -72,20 +75,16 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative lg:h-[500px] lg:w-[600px] hidden md:block"
         >
-          {/* Abstract 3D-like structural representation */}
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden flex items-center justify-center shadow-2xl">
             <div className="relative w-full h-full p-6 flex items-center justify-center">
-              {/* Subtle Grid Background */}
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
-              
-              {/* Central Code Editor Window */}
-              <Motion 
+              <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+
+              <Motion
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="w-full max-w-[340px] bg-slate-950/80 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden shadow-[0_0_40px_rgba(56,189,248,0.1)] relative z-10"
               >
-                {/* Window Header */}
                 <div className="px-4 py-3 flex items-center justify-between border-b border-white/10 bg-white/[0.02]">
                   <div className="flex gap-2">
                     <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
@@ -94,7 +93,6 @@ export default function Hero() {
                   </div>
                   <div className="text-[10px] font-mono text-slate-400 font-medium">System.tsx — FM Structure</div>
                 </div>
-                {/* Code Content */}
                 <div className="p-5 font-mono text-xs space-y-2.5">
                   <p className="text-slate-300">
                     <span className="text-blue-400">import</span> {'{'} <span className="text-cyan-300">Architect</span> {'}'} <span className="text-blue-400">from</span> <span className="text-green-300">'@fm/core'</span>;
@@ -126,9 +124,8 @@ export default function Hero() {
                 </div>
               </Motion>
 
-              {/* Floating UI Component 1: Performance Metric */}
-              <Motion 
-                animate={{ y: [0, -8, 0] }} 
+              <Motion
+                animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute right-1 top-1/4 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-3 shadow-xl z-20 flex items-center gap-3"
               >
@@ -143,9 +140,8 @@ export default function Hero() {
                 </div>
               </Motion>
 
-              {/* Floating UI Component 2: System Node */}
-              <Motion 
-                animate={{ y: [0, 8, 0] }} 
+              <Motion
+                animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute left-1 bottom-1/3 bg-slate-900/90 backdrop-blur-md border border-cyan-500/20 rounded-xl p-4 shadow-xl z-20"
               >

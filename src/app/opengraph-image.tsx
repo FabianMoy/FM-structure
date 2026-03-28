@@ -32,7 +32,7 @@ export default function OgImage() {
           marginBottom: 40,
         }}
       >
-        F
+        FM
       </div>
       <div
         style={{
@@ -53,6 +53,12 @@ export default function OgImage() {
       >
         FM Structure — Sitios rápidos, escalables y bien construidos.
       </div>
-    </div>
+    </div>,
+    {
+      ...size,
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    }
   );
 }

@@ -1,17 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { LuMail } from 'react-icons/lu';
-import type { ElementType } from 'react';
-
-export interface SocialLink {
-  label: string;
-  href: string;
-  icon: ElementType;
-}
-
-export interface FooterColumn {
-  heading: string;
-  links: { label: string; href: string }[];
-}
+import {SocialLink, FooterColumn} from '@/types'
 
 export const socialLinks: SocialLink[] = [
   { label: 'GitHub', href: 'https://github.com/FabianMoy', icon: FaGithub },
@@ -36,13 +25,6 @@ export const footerLinks: FooterColumn[] = [
       { label: 'Sobre nosotros', href: '#about' },
       { label: 'Portafolio', href: '#portfolio' },
       { label: 'Contacto', href: '#contact' },
-    ],
-  },
-  {
-    heading: 'Legal',
-    links: [
-      { label: 'Política de privacidad', href: '/privacy' },
-      { label: 'Términos de servicio', href: '/terms' },
     ],
   },
 ];

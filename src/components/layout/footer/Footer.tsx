@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { LuCodeXml } from "react-icons/lu";
 import { footerLinks, socialLinks, siteConfig } from '@/data';
+import LegalPopover from '@/components/ui/LegalPopover';
 
 export default function Footer() {
   return (
@@ -19,24 +20,21 @@ export default function Footer() {
               Construimos aplicaciones web modernas con precisión, optimización y escalabilidad.
             </p>
             <div className="flex items-center gap-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon
-                return (
-                  <a
-                  key={social.label}
-                  href={social.href}
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={social.label}
+                  aria-label={label}
                   className="text-slate-500 hover:text-white transition-colors"
                 >
                   <Icon size={20} aria-hidden="true" />
                 </a>
-              )})}
+              ))}
             </div>
           </div>
-
-          {footerLinks.map((column) => (
+                    {footerLinks.map((column) => (
             <div key={column.heading}>
               <p className="text-white font-semibold mb-6">{column.heading}</p>
               <ul className="space-y-3">
@@ -53,12 +51,19 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          <div>
+            <p className="text-white font-semibold mb-6">Legal</p>
+            <ul className="space-y-3">
+              <LegalPopover type="privacy" label="Política de privacidad" />
+              <LegalPopover type="terms" label="Términos de servicio" />
+            </ul>
+          </div>
 
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} {siteConfig.name}. Todos los derechos reservados.
+            © 2026 {siteConfig.name}. Todos los derechos reservados.
           </p>
         </div>
       </div>

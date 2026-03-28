@@ -6,7 +6,7 @@ import Motion from '@/components/animation/Motion';
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-24 bg-slate-950">
+    <section id="portfolio" className="py-8 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         <div className="mb-16 flex flex-col items-center text-center">

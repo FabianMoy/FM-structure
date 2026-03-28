@@ -31,9 +31,10 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href={`mailto:${siteConfig.email}`}
+              aria-label={`Enviar correo a ${siteConfig.email}`}
               className="px-8 py-4 w-full sm:w-auto text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all flex items-center justify-center gap-2 group shadow-[0_0_40px_-10px_rgba(37,99,235,0.5)] hover:shadow-[0_0_60px_-15px_rgba(37,99,235,0.6)]"
             >
-              Hacernos una consulta a nuestro email
+              Contáctanos por email
               <LuArrowRight size={18} aria-hidden="true" className="group-hover:translate-x-1 transition-transform" />
             </a>
 

@@ -35,17 +35,13 @@ export const metadata: Metadata = {
     url: "https://fmstructure.com",
     siteName: "FM Structure",
     title,
-    description,
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "FM Structure — Desarrollo Web en Monterrey",
-      },
-    ],
+    description
   },
-
+  twitter: {
+  card: "summary_large_image",
+  title,
+  description,
+},
   robots: {
     index: true,
     follow: true,
@@ -58,6 +54,6 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "TU_CODIGO_DE_VERIFICACION", // Google Search Console
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
   },
 };

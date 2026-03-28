@@ -4,14 +4,14 @@ import { services } from '@/data'
 export default function Services() {
 
   return (
-    <section id="services" className="py-24 bg-slate-950 relative border-t border-white/5">
+    <section id="services" className="py-16 bg-slate-950 relative border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         <div className="max-w-2xl">
           <p className="text-sm font-semibold text-cyan-400 tracking-wider uppercase mb-3">
             Nuestra expertise
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+          <h2 className="pb-8 text-3xl md:text-5xl font-bold text-white tracking-tight">
             Ingeniería por excelencia
           </h2>
         </div>
