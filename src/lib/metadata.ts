@@ -35,13 +35,21 @@ export const metadata: Metadata = {
     url: "https://fmstructure.com",
     siteName: "FM Structure",
     title,
-    description
+    description,
+    images: [
+      {
+        url: "https://fmstructure.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "FM Structure — Desarrollo Web en Monterrey",
+      },
+    ],
   },
   twitter: {
-  card: "summary_large_image",
-  title,
-  description,
-},
+    card: "summary_large_image",
+    title,
+    description,
+  },
   robots: {
     index: true,
     follow: true,
