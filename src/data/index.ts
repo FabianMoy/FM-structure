@@ -1,3 +1,7 @@
 export * from "./projects"
 export * from "./services"
 export * from "./navlinks"
+export * from "./footer"
+export * from "./siteConfig"
+export * from "./aboutStats"
+export * from "./legalContent"
