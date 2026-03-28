@@ -7,7 +7,7 @@ export const projects: Project[] = [
     category: "Sitio de contacto",
     image: "/images/Project1.png",
     span: 'md:col-span-2 md:row-span-2',
-    url: ''
+    url: 'https://vargasrealestate.com.mx/'
   },
   {
     index: 2,
@@ -15,7 +15,7 @@ export const projects: Project[] = [
     category: "Sitio de contacto",
     image: "/images/Project2.png",
     span: 'md:col-span-1 md:row-span-1',
-    url: ''
+    url: 'https://fabianmoy.github.io/aryst-landing/'
   },
   {
     index: 3,
@@ -23,6 +23,6 @@ export const projects: Project[] = [
     category: "Sitio de contacto",
     image: "/images/Project3.png",
     span: 'md:col-span-1 md:row-span-1',
-    url: ''
+    url: 'https://fabianmoy.github.io/DAVV/'
   },
 ]
