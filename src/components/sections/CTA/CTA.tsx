@@ -24,7 +24,7 @@ export default function CTA() {
           </h2>
 
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
-            Te ayudo a convertir tu idea en una aplicación web sólida, escalable y bien construida,
+            Te ayudamos a convertir tu idea en una aplicación web sólida, escalable y bien construida,
             cuidando tanto el rendimiento como la experiencia de usuario.
           </p>
 

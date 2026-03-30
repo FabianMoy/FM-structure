@@ -21,11 +21,11 @@ export default function About() {
   Sobre FM Structure
 </p>
 <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
-  Construyo soluciones digitales sólidas, pensadas para crecer.
+  Construimos soluciones digitales sólidas, pensadas para crecer.
 </h2>
 
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
-              Trabajo con principios de código limpio y arquitectura bien definida para desarrollar aplicaciones robustas y mantenibles. Más que solo programar, me enfoco en entender el problema y resolverlo con soluciones técnicas claras y eficientes.
+              Trabajamos con principios de código limpio y arquitectura bien definida para desarrollar aplicaciones robustas y mantenibles. Más que solo programar, nos enfocamos en entender el problema y resolverlo con soluciones técnicas claras y eficientes.
             </p>
 
             <ul className="space-y-4 mb-10">

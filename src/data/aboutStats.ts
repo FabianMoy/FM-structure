@@ -2,7 +2,7 @@ import {LuCode, LuTrendingUp, LuAward, LuAppWindow} from 'react-icons/lu'
 import type { AboutStat } from '@/types';
 
 export const aboutStats: AboutStat[] = [
-    { value: '10+', label: 'Projects entregados', icon: LuAppWindow},
+    { value: '10+', label: 'Projectos entregados', icon: LuAppWindow},
     { value: '100%', label: 'Satisfacción del cliente', icon: LuTrendingUp},
     { value: '3+', label: 'Años de experiencia', icon: LuAward},
     { value: '5+', label: 'Tecnologías', icon: LuCode},
