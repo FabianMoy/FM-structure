@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta centralizada: cambia aquí los colores de todo el sitio */
+  --color-paper: #f6f8fc;      /* fondo claro */
+  --color-mist: #e7edff;       /* superficie azulada suave */
+  --color-brand: #2347e8;      /* azul principal (CTA sobre fondo claro) */
+  --color-brand-dark: #1b38bd; /* hover del azul */
+  --color-cyan: #22d3ee;       /* acento vivo sobre fondo oscuro */
+  --color-ink: #0b1220;        /* texto y secciones oscuras */
+  --color-slate: #172036;      /* superficie sobre fondo oscuro */
+
+  --font-display: var(--font-grotesk), system-ui, sans-serif;
+  --font-sans: var(--font-figtree), system-ui, sans-serif;
+  --shadow-soft: 0 14px 34px -18px rgb(11 18 32 / 0.35);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+section[id] { scroll-margin-top: 4.5rem; }
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Trama de puntos discreta (el color se define con text-*) */
+.bg-dots {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.bg-dots-fade {
+  mask-image: linear-gradient(to bottom, #000 25%, transparent 95%);
+}
